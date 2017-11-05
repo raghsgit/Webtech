@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3 style="color:red">Browser Information</h3>
+	<div id="binf">
+	</div>
+	<script>
+		prop=['oscpu',
+			'productSub',
+			'cookieEnabled',
+			'buildID',
+			'hardwareConcurrency',
+			'appCodeName',
+			'appName',
+			'appVersion',
+			'platform',
+			'userAgent',
+			'product',
+			'language']
+		var binfo="<table><tr><th>Property</th><th>Value</th></tr>";
+		for (x in prop){
+			binfo+="<tr><td>"+prop[x]+"</td><td>"+window.navigator[prop[x]]+"</td></tr>";
+		}
+		binfo+="</table>";
+		document.getElementById("binf").innerHTML=binfo;
+    </script>
+</body>
+</html>

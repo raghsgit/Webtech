@@ -1,0 +1,21 @@
+product{
+	padding:10px;
+	width:100%;
+	display: block;}
+product:nth-child(even){
+	background-color:#fff;}
+product:nth-child(odd){
+	background-color: #eee;
+}
+product *{
+	display: block;
+	padding-left:50px;
+}
+product id{
+	display: inline;
+	padding-left:0
+}
+product name{
+	margin-left: -13px;
+	display:inline;	 
+}

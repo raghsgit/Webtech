@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="l6.css"?>
+<products>
+ <product >
+  <id>1</id>
+  <name>Delta</name>
+  <price>800</price>
+  <stock>4</stock>
+  <country>Denmark</country>
+ </product>
+ <product >
+  <id>2</id>
+  <name>Golf</name>
+  <price>1000</price>
+  <stock>5</stock>
+  <country>Germany</country>
+ </product>
+ <product >
+  <id>3</id>
+  <name>Alpfa</name>
+  <price>1200</price>
+  <stock>19</stock>
+  <country>Germany</country>
+ </product>
+ <product >
+  <id>4</id>
+  <name>Foxtrot</name>
+  <price>1500</price>
+  <stock>5</stock>
+  <country>Australia</country>
+ </product>
+</products> 

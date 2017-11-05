@@ -1,0 +1,45 @@
+<html lang="en">
+    <head>  
+        <meta charset="utf-8">  
+        <title>JavaScript Validation</title>  
+    </head>  
+    <body>  
+        <h3 style="color:red">Registration Form</h1>    
+        <form name='registration' onSubmit="return formValidation();">  
+            <ul style="list-style-type:none">   
+                <li>Name:<input type="text" autofocus/></li>  
+                <li> Role number:<input type="number"></li>
+                <li>Branch:<input type="text"/></li> 
+                <li>Year:<input type="number" min="1" max="4"/></li> 
+                <li>Email:<input type="email" name="Email"/></li>  
+                <li>Address:<input type="text" placeholder="line-1" /></li>   
+                <li>ZIP Code:<input type="number"/></li>  
+                <li style="color:red"><small>All Fields are mandatory</small> </li>
+                <li><input type="submit" name="submit" value="Submit" /></li> 
+            </ul>  
+        </form>  
+        <script>
+            function formValidation(){
+                input=document.forms["registration"].getElementsByTagName("input");
+                val=true;
+                for (x=0;x<7;x++){
+                    if (input[x].value==''){
+                        val=false;
+                        alert("All Fields Are manadatory");
+                        break;
+                    }
+                }
+                if (val){
+                    var patt = new RegExp("[0-9]{6}");
+                    val= patt.test(input[6].value);
+                    if(! val){
+                        alert("enter a valid zip code");
+                    }
+                }
+            if(val){
+                alert("submitted");
+            }
+            }
+        </script>
+    </body>  
+</html>  
