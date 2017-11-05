@@ -1,0 +1,6 @@
+<!ELEMENT products (product +)>
+<!ELEMENT product (id,name,price,stock,country)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
